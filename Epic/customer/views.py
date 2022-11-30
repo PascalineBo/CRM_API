@@ -11,8 +11,8 @@ from rest_framework.response import Response
 from django.contrib.auth import get_user_model
 from authentication.models import User
 from rest_framework.permissions import IsAuthenticated
-from authentication.permissions import IsControlling,IsSales,IsSupport,\
-    IsCustomerSalesContactOrDetailsOrReadOnly
+from authentication.permissions import IsControllingUsers,IsSales,IsSupport,\
+    IsCustomerSalesContactOrDetailsOrReadOnly,IsControlling
 from core.views import DestroyMixin
 
 
@@ -24,7 +24,9 @@ class CustomerViewset(DestroyMixin, ModelViewSet):
     serializer_class = CustomerSerializer
 
     permission_classes = [IsAuthenticated,
-                          IsCustomerSalesContactOrDetailsOrReadOnly|IsControlling]
+                          IsSales|IsControllingUsers,
+                          IsCustomerSalesContactOrDetailsOrReadOnly|
+                          IsControlling,]
 
 
     def get_queryset(self, *args, **kwargs):
