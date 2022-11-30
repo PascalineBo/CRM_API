@@ -16,4 +16,4 @@ class CustomerSerializer(serializers.ModelSerializer):
                   'customer_first_name','customer_last_name',
                   'customer_email','customer_phone',
                   'customer_adress','company_name',
-                  'sales_contact']
+                  'sales_contact','id']

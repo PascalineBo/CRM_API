@@ -1,14 +1,30 @@
+import logging
+
 from django.shortcuts import render
 from rest_framework.response import Response
 from authentication.serializers import UserSerializer
 from rest_framework.generics import GenericAPIView
 from rest_framework import status
+from .models import User
+from rest_framework.viewsets import ModelViewSet
+from .permissions import IsControlling
+from rest_framework.permissions import IsAuthenticated
 
-# Create your views here.
-class RegisterAPIView(GenericAPIView):
+
+logging.basicConfig(filename='epic_logging.log', encoding='utf-8',
+                    level=logging.INFO)
+
+
+class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
 
-    def post(self, request, *args, **kwargs):
+    permission_classes = [IsAuthenticated, IsControlling]
+
+    def get_queryset(self):
+        print(bool(self.request.user.position == 'Controlling'))
+        return User.objects.all()
+
+    def create(self, request, *args, **kwargs):
         serializer = self.serializer_class(data=request.data)
 
         if serializer.is_valid():
