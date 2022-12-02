@@ -4,7 +4,7 @@
 ## pour élaborer un système de CRM sécurisé interne à une entreprise d'évenementiel
 
 ### Exigences techniques Kanban:
-https://www.notion.so/5a4642c14eef48c78c9e1b98a8e0a3fc?v=12d25b7081ba436a9e06f0e99cdcae25
+(https://www.notion.so/5a4642c14eef48c78c9e1b98a8e0a3fc?v=12d25b7081ba436a9e06f0e99cdcae25)
 
 #### Architecture du projet:
 
@@ -51,10 +51,10 @@ Ce dossier est découpé de la façon suivante:
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
 (ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
 Les filtres disponibles sont:
-<pre> ?name = <company_name> <pre>
-<pre> ?search=<part of the creation date> <pre>
-<pre> ?e-mail= <customer email> <pre>
-<pre> ?price= <contract amount> <pre>
+ ?name = <company_name> 
+ ?search=<part of the creation date> 
+ ?e-mail= <customer email> 
+ ?price= <contract amount> 
 
 #### db.sqlite3:
 C'est la base de données de Django
