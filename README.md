@@ -52,7 +52,7 @@ Ce dossier est découpé de la façon suivante:
 (ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
 Les filtres disponibles sont:
  ?name = <company_name> 
- ?search=<part of the creation date> 
+ ?search= <part of the creation date> 
  ?e-mail= <customer email> 
  ?price= <contract amount> 
 
