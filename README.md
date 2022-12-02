@@ -52,9 +52,9 @@ Ce dossier est découpé de la façon suivante:
 (ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
 Les filtres disponibles sont:
  ?name = <company_name> 
- ?search= <part of the creation date> 
- ?e-mail= <customer email> 
- ?price= <contract amount> 
+ ?search= <part_of_the_creation_date> 
+ ?e-mail= <customer_email> 
+ ?price= <contract_amount> 
 
 #### db.sqlite3:
 C'est la base de données de Django
