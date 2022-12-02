@@ -40,6 +40,10 @@ liste complète des contrats de la base de données; CRUD d'un contrat selon son
 
 liste complète des évènements de la base de données; CRUD d'un évenement selon son id et les permissions
 
+#### Dossier core:
+Ce dossier contient un fichier models.py et un fichier views.py, où sont définis respectivement un Modèle dont vont hériter les autres modèles des Appli (sauf authentication), et un Mixin dont vont hériter les autres views des Appli (sauf authentication).
+
+
 #### Dossier tickets:
 Ce dossier est découpé de la façon suivante:
 - un fichier models.py avec les modèles des tables de la base de données
