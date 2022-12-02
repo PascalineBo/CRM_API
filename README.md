@@ -51,7 +51,7 @@ Ce dossier est découpé de la façon suivante:
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
 (ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
 Les filtres disponibles sont:
-<pre> ? name = <company_name>
+<pre> ?name = <company_name>
 <pre> ?search=<part of the creation date>
 <pre> ?e-mail= <customer email>
 <pre> ?price= <contract amount>
