@@ -44,12 +44,13 @@ liste complète des évènements de la base de données; CRUD d'un évenement se
 Ce dossier contient un fichier models.py et un fichier views.py, où sont définis respectivement un Modèle dont vont hériter les autres modèles des Appli (sauf authentication), et un Mixin dont vont hériter les autres views des Appli (sauf authentication).
 
 
-#### Dossier tickets:
+#### Dossier contract:
 Ce dossier est découpé de la façon suivante:
-- un fichier models.py avec les modèles des tables de la base de données
-- un fichier serializers.py avec les serializers qui permettent de charger les données dans la base de données et de les rapatrier (au format JSON)
-- un fichier permissions.py qui définit les permissions des différents utilisateurs pour les opérations CRUD des ModelViewsets
-- un fichier views.py qui définit les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
+- un fichier models.py avec le modèle de table contrat de la base de données
+- un fichier serializers.py avec le serializers qui permettent de charger les données dans la base de données et de les rapatrier (au format JSON)
+- un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
+(ii) les filtres des endpoints:
+
 
 #### db.sqlite3:
 C'est la base de données de Django
