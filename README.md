@@ -49,15 +49,18 @@ Ce dossier est découpé de la façon suivante:
 - un fichier models.py avec le modèle de table contrat de la base de données
 - un fichier serializers.py avec le serializers qui permettent de charger les données dans la base de données et de les rapatrier (au format JSON)
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
-(ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
+(ii) les filtres de l'endpoint: (http://localhost:8000/epic/contracts/).
 Les filtres disponibles sont:
  `?name = <company_name>`, 
  `?search= <part_of_the_creation_date>`,
  `?e-mail= <customer_email>`,
  `?price= <contract_amount>`,
-
-#### db.sqlite3:
-C'est la base de données de Django
+ 
+ #### Dossier customer:
+ Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
+Les filtres de l'endpoint: (http://localhost:8000/epic/customers/) disponibles sont:
+ `?name = <company_name>`, 
+ `?e-mail= <customer_email>`,
 
 #### Fichier manage.py:
 Ce fichier contient le script utilitaire de ligne de commande de Django
