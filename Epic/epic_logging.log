@@ -2881,3 +2881,4 @@ INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Pytho
 WARNING:django.request:Not Found: /epic/events/search=2023/
 WARNING:django.request:Not Found: /epic/events/search=2023/
 INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/customer/views.py changed, reloading.

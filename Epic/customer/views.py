@@ -29,12 +29,6 @@ class CustomerViewset(DestroyMixin, ModelViewSet):
 
 
     def get_queryset(self, *args, **kwargs):
-        # user = self.request.user
-        # controllers = User.objects.filter(position='CONTROLLING').all()
-        # sales = User.objects.filter(position='SALES').all()
-        # if user in controllers:
-            # return Customer.objects.all()
-        # return Customer.objects.filter(sales_contact_id=user.id)
         queryset = Customer.objects.all()
         company_name = self.request.GET.get('name')
         if company_name is not None:
