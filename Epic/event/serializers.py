@@ -22,4 +22,4 @@ class EventSerializer(serializers.ModelSerializer):
                   'event_status','notes',
                   'attendees','related_contract',
                   'event_customer','event_support_contact',
-                  'event_sales_contact']
+                  'event_sales_contact','id']

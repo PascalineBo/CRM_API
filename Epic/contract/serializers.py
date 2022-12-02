@@ -14,4 +14,4 @@ class ContractSerializer(serializers.ModelSerializer):
         model = Contract
         fields = ['id','contract_company',
                     'contract_customer','price',
-                    'signed','payment_due']
+                    'signed','payment_due','created_time']

@@ -7,7 +7,7 @@ from rest_framework.generics import GenericAPIView
 from rest_framework import status
 from .models import User
 from rest_framework.viewsets import ModelViewSet
-from .permissions import IsControlling, IsControllingUsers
+from .permissions import IsControlling
 from rest_framework.permissions import IsAuthenticated
 
 
@@ -18,7 +18,7 @@ logging.basicConfig(filename='epic_logging.log', encoding='utf-8',
 class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
 
-    permission_classes = [IsAuthenticated&IsControllingUsers]
+    permission_classes = [IsAuthenticated&IsControlling]
 
     def get_queryset(self):
         return User.objects.all()
