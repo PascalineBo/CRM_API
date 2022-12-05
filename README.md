@@ -134,4 +134,4 @@ pour exécuter le serveur de développement
 
 (v) vous pouvez exécuter des requêtes (Postman) vers  http://127.0.0.1:8000/epic/, suivi de l'url des différents endpoints:
 
-Exemple: http://127.0.0.1:8000/softdesk/customers/1/ pour requêter le client 1
+Exemple: http://127.0.0.1:8000/epic/customers/1/ pour requêter le client 1
