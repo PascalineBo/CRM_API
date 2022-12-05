@@ -4,7 +4,7 @@
 ## pour élaborer un système de CRM sécurisé interne à une entreprise d'évenementiel
 
 ### Exigences techniques Kanban:
-(https://www.notion.so/5a4642c14eef48c78c9e1b98a8e0a3fc?v=12d25b7081ba436a9e06f0e99cdcae25)
+[https://www.notion.so/5a4642c14eef48c78c9e1b98a8e0a3fc?v=12d25b7081ba436a9e06f0e99cdcae25]
 
 #### Architecture du projet:
 
