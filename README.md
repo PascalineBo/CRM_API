@@ -65,9 +65,9 @@ Les filtres de l'endpoint: (http://localhost:8000/epic/customers/) disponibles s
  #### Dossier event:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
 Les filtres de l'endpoint: (http://localhost:8000/epic/events/) disponibles sont:
- `?name = <company_name>`, 
- `?e-mail= <customer_email>`,
- `?search= <part_of_the_event_date>`,
+ - `?name = <company_name>`, 
+ - `?e-mail= <customer_email>`,
+ - `?search= <part_of_the_event_date>`,
 
 #### Fichier manage.py:
 Ce fichier contient le script utilitaire de ligne de commande de Django
