@@ -51,27 +51,34 @@ Ce dossier est découpé de la façon suivante:
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
 (ii) les filtres de l'endpoint: (http://localhost:8000/epic/contracts/).
 Les filtres disponibles sont:
- `?name = <company_name>`, 
- `?search= <part_of_the_creation_date>`,
- `?e-mail= <customer_email>`,
- `?price= <contract_amount>`,
+ - `?name = <company_name>`, 
+ - `?search= <part_of_the_creation_date>`,
+ - `?e-mail= <customer_email>`,
+ - `?price= <contract_amount>`,
  
  #### Dossier customer:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
 Les filtres de l'endpoint: (http://localhost:8000/epic/customers/) disponibles sont:
+ - `?name = <company_name>`, 
+ - `?e-mail= <customer_email>`,
+ 
+ #### Dossier event:
+ Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
+Les filtres de l'endpoint: (http://localhost:8000/epic/events/) disponibles sont:
  `?name = <company_name>`, 
  `?e-mail= <customer_email>`,
+ `?search= <part_of_the_event_date>`,
 
 #### Fichier manage.py:
 Ce fichier contient le script utilitaire de ligne de commande de Django
 
 #### Permissions: 
 Les utilisateurs ont les permissions suivantes:
-- Un projet ne doit être accessible qu'à son responsable et aux contributeurs. 
-- Seuls les contributeurs sont autorisés à créer ou à consulter les problèmes d'un projet.
-- Seuls les contributeurs peuvent créer (Create) et lire (Read) les commentaires relatifs à un problème. 
-- En outre, ils ne peuvent les actualiser (Update) et les supprimer (Delete) que s'ils en sont les auteurs.
-- Un commentaire doit être visible par tous les contributeurs du projet, mais il ne peut être actualisé ou supprimé que par son auteur.
+- Le Management (CONTROLLING) a accès à tous les endpoints et peut faire toutes les opérations du CRUD
+- L'équipe Ventes (SALES) a accès à tous les objets de la Base de Données en Lecture, sauf les données des Utilisateurs; 
+Elle peut créer des Clients, les mettre à jour si ce sont les siens, créer des Contrats et les mettre à jour si ce sont les siens;
+- L'équipe Support (SUPPORT) a accès à tous les objets de la Base de Données en Lecture, saut les données des Utilisateurs;
+Elle peut uniquement modifier et mettre à jour les évènements dont elle est responsable.
 
 ## Comment installer cette Appli sur votre ordinateur:
 (i) Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
@@ -80,7 +87,7 @@ Les utilisateurs ont les permissions suivantes:
 
 (iii) pour importer les fichiers de ce repository, tapez la commande git:
 
-`git clone https://github.com/MargueriteEffren/OC_Projet10.git`
+`git clone https://github.com/MargueriteEffren/OC_Projet12.git`
 
 (iv) puis positionnez vous dans le dossier OC_Projet10 (`cd OC_Projet10`)
 
@@ -107,7 +114,7 @@ Les utilisateurs ont les permissions suivantes:
 
 Pour avoir une vue admin de la base de données, vous pouvez utiliser directement dans votre navigateur l'url http://127.0.0.1:8000/admin, et vous connecter en tant que superuser avec les identifiants:
 
-username: Admin
+username: Admin2
 
 password: Admin-OC
 
@@ -123,26 +130,8 @@ password: Admin-OC
 
 pour exécuter le serveur de développement
 
-(iv) puis, avec Postman par exemple, vous pouvez vous connecter avec l'url http://127.0.0.1:8000/softdesk/login, en remplissant les champs username et password;
-- quelques exemples d'utilisateurs de Softdesk API:
+(iv) puis, avec Postman par exemple, vous pouvez vous connecter avec l'url http://127.0.0.1:8000/epic/login, en remplissant les champs username et password;
 
-username: Kate
+(v) vous pouvez exécuter des requêtes (Postman) vers  http://127.0.0.1:8000/epic/, suivi de l'url des différents endpoints:
 
-password: S3cretpassword1
-
-username: Ares
-
-password: S3cretpassword5
-
-username: Elaine
-
-password: S3cretpassword3
-
-username: Lenny
-
-password: S3cretpassword2
-
-
-(v) vous pouvez exécuter des requêtes (Postman) vers  http://127.0.0.1:8000/softdesk/, suivi de l'url des différents endpoints:
-
-Exemple: http://127.0.0.1:8000/softdesk/projects/1/ pour requêter le projet 1
+Exemple: http://127.0.0.1:8000/softdesk/customers/1/ pour requêter le client 1
