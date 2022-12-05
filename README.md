@@ -1,7 +1,7 @@
 # OC_Projet12bis
 
-## Objectif du projet: développer une API avec une base de données PostgreSQL 
-## pour élaborer un système de CRM sécurisé interne à une entreprise d'évenementiel
+## Objectif du projet: développer une API avec une base de données PostgreSQL
+## pour élaborer un système de CRM sécurisé interne à une entreprise d'évenementiel appelée Epic Events
 
 ### Exigences techniques Kanban:
 [https://www.notion.so/5a4642c14eef48c78c9e1b98a8e0a3fc?v=12d25b7081ba436a9e06f0e99cdcae25]
@@ -49,7 +49,7 @@ Ce dossier est découpé de la façon suivante:
 - un fichier models.py avec le modèle de table contrat de la base de données
 - un fichier serializers.py avec le serializers qui permettent de charger les données dans la base de données et de les rapatrier (au format JSON)
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
-(ii) les filtres de l'endpoint: (http://localhost:8000/epic/contracts/).
+(ii) les filtres de l'endpoint: [http://localhost:8000/epic/contracts/].
 Les filtres disponibles sont:
  - `?name = <company_name>`, 
  - `?search= <part_of_the_creation_date>`,
@@ -58,13 +58,13 @@ Les filtres disponibles sont:
  
  #### Dossier customer:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
-Les filtres de l'endpoint: (http://localhost:8000/epic/customers/) disponibles sont:
+Les filtres de l'endpoint: [http://localhost:8000/epic/customers/] disponibles sont:
  - `?name = <company_name>`, 
  - `?e-mail= <customer_email>`,
  
  #### Dossier event:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
-Les filtres de l'endpoint: (http://localhost:8000/epic/events/) disponibles sont:
+Les filtres de l'endpoint: [http://localhost:8000/epic/events/] disponibles sont:
  - `?name = <company_name>`, 
  - `?e-mail= <customer_email>`,
  - `?search= <part_of_the_event_date>`,
