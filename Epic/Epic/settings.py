@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'Epic',
         'USER': 'user_p12',
         'PASSWORD': 'secret123',
-        'HOST': 'winhost', # IMPORTANT:please put the name of your host here
+        'HOST': 'winhost',  # IMPORTANT:please put the name of your host here
         'PORT':  '5432',
     }
 }

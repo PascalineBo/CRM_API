@@ -1,18 +1,13 @@
 import logging
 
-from django.shortcuts import render
-from rest_framework import status, exceptions
 from rest_framework.permissions import IsAuthenticated
 from authentication.permissions import \
     IsContractSalesContactOrDetailsOrReadOnly, IsControlling,\
-    IsSales, IsSupport
+    IsSales
 from customer.models import Customer
 from .models import Contract
 from .serializers import ContractSerializer
 from rest_framework.viewsets import ModelViewSet
-from rest_framework.response import Response
-from django.contrib.auth import get_user_model
-from django.contrib.auth.decorators import login_required
 from core.views import DestroyMixin
 from rest_framework import filters
 
@@ -42,7 +37,7 @@ class ContractViewset(DestroyMixin, ModelViewSet):
             company_queryset = customer_queryset.filter(
                 company_name=company_name)
             if len(company_queryset) > 0:
-                contract_customer = company_queryset [0]
+                contract_customer = company_queryset[0]
                 queryset = queryset.filter(contract_customer=contract_customer)
 
         # customer email filter
@@ -62,5 +57,4 @@ class ContractViewset(DestroyMixin, ModelViewSet):
         return queryset
 
     def destroy(self, request, model_name="contract", *args, **kwargs):
-        contract = self.get_object()
         return super().destroy(request, model_name, *args, **kwargs)

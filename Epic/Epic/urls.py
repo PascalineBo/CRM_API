@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_nested import routers
-from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from rest_framework_simplejwt.views import TokenObtainPairView, \
+    TokenRefreshView
 from authentication.views import UserViewSet
 from customer.views import CustomerViewset
 from contract.views import ContractViewset
@@ -27,11 +28,13 @@ router = routers.SimpleRouter()
 
 # /customers/   ||   /customers/{id}/
 router.register('customers', CustomerViewset, basename='customer')
-customers_router = routers.NestedSimpleRouter(router, 'customers', lookup='customer')
+customers_router = routers.NestedSimpleRouter(
+    router, 'customers', lookup='customer')
 
 # /contracts/   ||   /contracts/{id}/
 router.register('contracts', ContractViewset, basename='contract')
-contracts_router = routers.NestedSimpleRouter(router, 'contracts', lookup='contract')
+contracts_router = routers.NestedSimpleRouter(
+    router, 'contracts', lookup='contract')
 
 # /events/   ||   /events/{id}/
 router.register('events', EventViewset, basename='event')
@@ -45,12 +48,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('epic-auth/', include('rest_framework.urls')),
     path('epic/login/', TokenObtainPairView.as_view(), name='login'),
-    path('epic/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('epic/token/refresh/', TokenRefreshView.as_view(),
+         name='token_refresh'),
     path('epic/', include(router.urls)),
     path('epic/', include(contracts_router.urls)),
     path('epic/', include(customers_router.urls)),
     path('epic/', include(users_router.urls)),
     path('epic/', include(events_router.urls)),
 ]
-
-

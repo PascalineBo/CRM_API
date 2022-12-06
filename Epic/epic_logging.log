@@ -2882,3 +2882,682 @@ WARNING:django.request:Not Found: /epic/events/search=2023/
 WARNING:django.request:Not Found: /epic/events/search=2023/
 INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
 INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/customer/views.py changed, reloading.
+WARNING:django.request:Unauthorized: /epic/events/
+WARNING:django.request:Not Found: /favicon.ico
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/customer/views.py changed, reloading.
+WARNING:django.request:Unauthorized: /epic/events/
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Unauthorized: /epic/events/
+WARNING:django.request:Not Found: /favicon.ico
+WARNING:django.request:Unauthorized: /epic/events/43/
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'event_customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 67, in has_permission
+    customer_id = request.POST['event_customer'] # checks the customer related to the event
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'event_customer'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'event_customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 67, in has_permission
+    customer_id = request.POST['event_customer'] # checks the customer related to the event
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'event_customer'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/request.py", line 416, in __getattr__
+    return getattr(self._request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'DELETE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 71, in has_permission
+    customer_id = request.DELETE['event_customer']  # checks the customer related to the event
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/request.py", line 418, in __getattr__
+    return self.__getattribute__(attr)
+AttributeError: 'Request' object has no attribute 'DELETE'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 73, in has_permission
+    customer = Customer.objects.filter(id=customer_id) # filter returns a list
+UnboundLocalError: local variable 'customer_id' referenced before assignment
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 73, in has_permission
+    #with one element
+UnboundLocalError: local variable 'customer_id' referenced before assignment
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 72, in has_permission
+    customer = Customer.objects.filter(id=customer_id) # filter returns a list
+UnboundLocalError: local variable 'customer_id' referenced before assignment
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+WARNING:django.request:Unauthorized: /epic/events/45/
+ERROR:django.request:Internal Server Error: /epic/events/45/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'event_customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 68, in has_permission
+    customer_id = request.POST['event_customer'] # checks the customer related to the event
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'event_customer'
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 84, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'event_customer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 68, in has_permission
+    customer_id = request.POST['event_customer'] # checks the customer related to the event
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/utils/datastructures.py", line 86, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'event_customer'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 68, in has_permission
+    customer_id = request.POST.get('event_customer', False) # checks the customer related to the event
+TypeError: 'method' object is not subscriptable
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 77, in has_permission
+    return request.user.id == customer[0].sales_contact.id or \
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py", line 54, in get_queryset
+    print(request.POST.get('event_customer', False))
+NameError: name 'request' is not defined
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/mixins.py", line 65, in update
+    instance = self.get_object()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/generics.py", line 83, in get_object
+    queryset = self.filter_queryset(self.get_queryset())
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py", line 54, in get_queryset
+    print(self.request.POST.get('event_customer', False))
+NameError: name 'request' is not defined
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/event/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 78, in has_permission
+    return request.user.id == customer[0].sales_contact.id or \
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 74, in has_permission
+    customer.append(1)
+AttributeError: 'QuerySet' object has no attribute 'append'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 74, in has_permission
+    print(customer[0])
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 78, in has_permission
+    if len(event) >= 1:
+AttributeError: 'int' object has no attribute 'sales_contact'
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 79, in has_permission
+    return request.user.id == customer[0].sales_contact.id or \
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 446, in __getitem__
+    return qs._result_cache[0]
+IndexError: list index out of range
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 79, in has_permission
+    return request.user.id == customer[0].sales_contact.id or \
+TypeError: 'Customer' object is not subscriptable
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+WARNING:django.request:Unauthorized: /epic/events/46/
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+WARNING:django.request:Unauthorized: /epic/events/46/
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 72, in has_permission
+    customer = Customer.objects.filter(id=customer_id) # filter returns a list
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+ERROR:django.request:Internal Server Error: /epic/events/46/
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2018, in get_prep_value
+    return int(value)
+ValueError: invalid literal for int() with base 10: ''
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py", line 72, in has_permission
+    customer = Customer.objects.filter(id=customer_id) # filter returns a list
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1420, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1438, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/query.py", line 1445, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1532, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1562, in _add_q
+    child_clause, needed_inner = self.build_filter(
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1478, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/sql/query.py", line 1303, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 27, in __init__
+    self.rhs = self.get_prep_lookup()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 341, in get_prep_lookup
+    return super().get_prep_lookup()
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/lookups.py", line 85, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+  File "/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/env/lib/python3.10/site-packages/django/db/models/fields/__init__.py", line 2020, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got ''.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/contract/views.py changed, reloading.
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/customer/views.py changed, reloading.
+WARNING:django.request:Not Found: /epic/events/45/
+WARNING:django.request:Forbidden: /epic/customers/24/
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+WARNING:django.request:Forbidden: /epic/contracts/7/
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.
+WARNING:django.request:Forbidden: /epic/events/
+WARNING:django.request:Forbidden: /epic/events/47/
+WARNING:django.request:Unauthorized: /epic/events/47/
+WARNING:django.request:Not Found: /epic/events/47/
+WARNING:django.request:Forbidden: /epic/events/50/
+WARNING:django.request:Forbidden: /epic/events/50/
+WARNING:django.request:Forbidden: /epic/users/
+WARNING:django.request:Forbidden: /epic/users/6/
+WARNING:django.request:Forbidden: /epic/users/8/
+WARNING:django.request:Forbidden: /epic/customers/51/
+WARNING:django.request:Forbidden: /epic/contracts/52/
+WARNING:django.request:Forbidden: /epic/contracts/7/
+WARNING:django.request:Forbidden: /epic/users/
+WARNING:django.request:Forbidden: /epic/users/6/
+WARNING:django.request:Forbidden: /epic/users/8/
+WARNING:django.request:Unauthorized: /epic/events/44/
+WARNING:django.request:Forbidden: /epic/events/
+WARNING:django.request:Forbidden: /epic/events/44/
+WARNING:django.request:Forbidden: /epic/events/
+WARNING:django.request:Forbidden: /epic/users/
+WARNING:django.request:Forbidden: /epic/users/6/
+WARNING:django.request:Forbidden: /epic/users/8/
+WARNING:django.request:Forbidden: /epic/customers/
+WARNING:django.request:Forbidden: /epic/customers/
+INFO:django.utils.autoreload:/mnt/c/Users/bbo/Documents/Developpeuse_Appli_Python/OC_Projet12bis/Epic/authentication/permissions.py changed, reloading.

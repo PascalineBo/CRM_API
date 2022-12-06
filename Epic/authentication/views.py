@@ -1,9 +1,7 @@
 import logging
 
-from django.shortcuts import render
 from rest_framework.response import Response
 from authentication.serializers import UserSerializer
-from rest_framework.generics import GenericAPIView
 from rest_framework import status
 from .models import User
 from rest_framework.viewsets import ModelViewSet
@@ -18,7 +16,7 @@ logging.basicConfig(filename='epic_logging.log', encoding='utf-8',
 class UserViewSet(ModelViewSet):
     serializer_class = UserSerializer
 
-    permission_classes = [IsAuthenticated&IsControlling]
+    permission_classes = [IsAuthenticated & IsControlling]
 
     def get_queryset(self):
         return User.objects.all()

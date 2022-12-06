@@ -1,8 +1,5 @@
 from django.db import models
-
-# Create your models here.
 from django.contrib.auth.models import AbstractUser
-
 
 
 class User(AbstractUser):
@@ -10,11 +7,9 @@ class User(AbstractUser):
     SUPPORT = 'SUPPORT'
     CONTROLLING = 'CONTROLLING'
 
-
     POSITION_CHOICES = (
         (SALES, 'Sales'),
         (SUPPORT, 'Support'),
-        
         (CONTROLLING, 'Controlling')
         )
 
