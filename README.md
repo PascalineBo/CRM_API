@@ -135,3 +135,6 @@ pour exécuter le serveur de développement
 (v) vous pouvez exécuter des requêtes (Postman) vers  http://127.0.0.1:8000/epic/, suivi de l'url des différents endpoints:
 
 Exemple: http://127.0.0.1:8000/epic/customers/1/ pour requêter le client 1
+
+### Informations de logging:
+Vous pourrez trouver les informations de logging dans le fichier epic_logging.log qui sera automatiquement généré à la racine du projet à chaque requête.
