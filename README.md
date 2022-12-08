@@ -89,7 +89,7 @@ Elle peut uniquement modifier et mettre à jour les évènements dont elle est r
 
 `git clone https://github.com/MargueriteEffren/OC_Projet12.git`
 
-(iv) puis positionnez vous dans le dossier OC_Projet10 (`cd OC_Projet10`)
+(iv) puis positionnez vous dans le dossier OC_Projet12 (`cd OC_Projet12`)
 
 (v) créez votre environnement virtuel, par exemple avec la commande:
 
