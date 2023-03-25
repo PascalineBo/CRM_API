@@ -100,6 +100,7 @@ Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
 
 <li>  à l'aide des commandes du terminal, activez votre environnement virtuel 
 (si votre environnement virtuel s'appelle env):
+   
 > Sur Windows  
 - terminal de type bash : `source env/Scripts/activate`
 - terminal de type shell : `env\Scripts\activate`
