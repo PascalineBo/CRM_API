@@ -23,22 +23,21 @@ Egalement, ligne 84 et suivantes, ce fichier settings.py définit les paramètre
 les différents endpoints. La liste des endpoints de cette API est:
     > liste complète des clients; CRUD d'un client selon son id et les permissions:
     <pre>epic/customers/</pre> 
-    
     <pre>epic/customers/{id}/</pre> 
     
-    > liste complète des utilisateurs de la base de données; CRUD d'un utilisateur d'un projet selon son id, uniquement pour le management (CONTROLLING)
+    > liste complète des utilisateurs de la base de données; CRUD d'un utilisateur d'un projet selon son id, uniquement pour le management (CONTROLLING):
      <pre>/epic/users/</pre> 
      <pre>/epic/users/{id}</pre> 
 
+    > liste complète des contrats de la base de données; CRUD d'un contrat selon son id et les permissions:
+     <pre>/epic/contracts/</pre> 
+     <pre>/epic/contracts/{id}</pre>
+
+    > liste complète des évènements de la base de données; CRUD d'un évenement selon son id et les permissions
+     <pre>/epic/events/</pre> 
+     <pre>/epic/events/{id}</pre>
 
 
-- <pre>/epic/contracts/ <pre>/epic/contracts/{id}
-
-liste complète des contrats de la base de données; CRUD d'un contrat selon son id et les permissions
-
-- <pre>/epic/events/ <pre>/epic/events/{id}
-
-liste complète des évènements de la base de données; CRUD d'un évenement selon son id et les permissions
 
 #### Dossier core:
 Ce dossier contient un fichier models.py et un fichier views.py, où sont définis respectivement un Modèle dont vont hériter les autres modèles des Appli (sauf authentication), et un Mixin dont vont hériter les autres views des Appli (sauf authentication).
