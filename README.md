@@ -21,8 +21,9 @@ Egalement, ligne 84 et suivantes, ce fichier settings.py définit les paramètre
     **IMPORTANT: ligne 90, pour la clé 'HOST', veuillez modifier la valeur et mettre le nom de votre localhost.**
 - le fichier urls.py, où sont définies les urls de connexion, d'obtention et de rafraîchissement des tokens, et les routers définissant 
 les différents endpoints. La liste des endpoints de cette API est:
-    epic/customers/  
-    epic/customers/{id}/
+    <pre>epic/customers/</pre> 
+    
+    <pre>epic/customers/{id}/</pre> 
 liste complète des clients; CRUD d'un client selon son id et les permissions
 
     /epic/users/
