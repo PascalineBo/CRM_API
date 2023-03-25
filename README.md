@@ -17,14 +17,16 @@ l'API utilise les modèles AbstractUser et UserAdmin de Django; l'authentificati
 #### Dossier Epic:
 Ce dossier contient:
 - le fichier settings.py où est défini notamment le recours à 'rest_framework', 'rest_framework_simplejwt', 'authentication' de Django. 
-Egalement, ligne 84 et suivantes, ce fichier settings.py définit les paramètres de connection à une base de données PostgreSQL. IMPORTANT: ligne 90, pour la clé 'HOST', 
-veuillez modifier la valeur et mettre le nom de votre localhost.
+Egalement, ligne 84 et suivantes, ce fichier settings.py définit les paramètres de connection à une base de données PostgreSQL. 
+    **IMPORTANT: ligne 90, pour la clé 'HOST', veuillez modifier la valeur et mettre le nom de votre localhost.**
 - le fichier urls.py, où sont définies les urls de connexion, d'obtention et de rafraîchissement des tokens, et les routers définissant 
 les différents endpoints. La liste des endpoints de cette API est:
-    epic/customers/  <pre>/customers/{id}/
+    epic/customers/  
+    epic/customers/{id}/
 liste complète des clients; CRUD d'un client selon son id et les permissions
 
-    /epic/users/ <pre> /epic/users/{id}
+    /epic/users/
+    /epic/users/{id}
 
 liste complète des utilisateurs de la base de données; CRUD d'un utilisateur d'un projet selon son id, uniquement pour le management (CONTROLLING)
 
