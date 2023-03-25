@@ -87,10 +87,10 @@ Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
 
 <li>  pour importer les fichiers de ce repository, tapez la commande git:
 
-`git clone https://github.com/MargueriteEffren/OC_Projet12.git`
+`git clone https://github.com/PascalineBo/CRM_API.git`
    </li> 
 
-<li>  puis positionnez vous dans le dossier OC_Projet12 (`cd OC_Projet12`)
+<li>  puis positionnez vous dans le dossier CRM_API (`cd CRM_API`)
    </li> 
 
 <li>  créez votre environnement virtuel, par exemple avec la commande:
