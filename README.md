@@ -1,4 +1,4 @@
-# OC_Projet12bis
+# CRM API
 
 ## Objectif du projet: développer une API avec une base de données PostgreSQL
 pour élaborer un système de CRM sécurisé interne à une entreprise d'évenementiel appelée Epic Events
