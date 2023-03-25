@@ -114,6 +114,7 @@ Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
 `pip install -r requirements.txt`
    </li> 
 </ol>
+
 ## Comment utiliser l'Appli:
 
 ### Expérience Admin:
