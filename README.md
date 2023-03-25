@@ -48,7 +48,7 @@ Ce dossier est découpé de la façon suivante:
 - un fichier models.py avec le modèle de table contrat de la base de données
 - un fichier serializers.py avec le serializers qui permettent de charger les données dans la base de données et de les rapatrier (au format JSON)
 - un fichier views.py qui définit (i) les fonctions de service des données grâce aux ModelViewsets: Un ModelViewset  est comparable à une super vue Django qui regroupe   à la fois CreateView, UpdateView, DeleteView, ListView  et DetailView
-(ii) les filtres de l'endpoint: [http://localhost:8000/epic/contracts/].
+(ii) les filtres de l'endpoint: http://localhost:8000/epic/contracts/.
 Les filtres disponibles sont:
  - `?name = <company_name>`, 
  - `?search= <part_of_the_creation_date>`,
@@ -57,13 +57,13 @@ Les filtres disponibles sont:
  
  #### Dossier customer:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
-Les filtres de l'endpoint: [http://localhost:8000/epic/customers/] disponibles sont:
+Les filtres de l'endpoint: http://localhost:8000/epic/customers/ disponibles sont:
  - `?name = <company_name>`, 
  - `?e-mail= <customer_email>`,
  
  #### Dossier event:
  Dossier similaire au dossier contract, appli qui gère le code pour les Clients de la base de données.
-Les filtres de l'endpoint: [http://localhost:8000/epic/events/] disponibles sont:
+Les filtres de l'endpoint: http://localhost:8000/epic/events/ disponibles sont:
  - `?name = <company_name>`, 
  - `?e-mail= <customer_email>`,
  - `?search= <part_of_the_event_date>`,
@@ -80,21 +80,25 @@ Elle peut créer des Clients, les mettre à jour si ce sont les siens, créer de
 Elle peut uniquement modifier et mettre à jour les évènements dont elle est responsable.
 
 ## Comment installer cette Appli sur votre ordinateur:
-(i) Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
+Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
+<ol>
+<li> puis, avec les commandes du terminal, positionnez-vous sur le dossier dans lequel vous souhaitez installer l'Appli
+   </li> 
 
-(ii) puis, avec les commandes du terminal, positionnez-vous sur le dossier dans lequel vous souhaitez installer l'Appli
-
-(iii) pour importer les fichiers de ce repository, tapez la commande git:
+<li>  pour importer les fichiers de ce repository, tapez la commande git:
 
 `git clone https://github.com/MargueriteEffren/OC_Projet12.git`
+   </li> 
 
-(iv) puis positionnez vous dans le dossier OC_Projet12 (`cd OC_Projet12`)
+<li>  puis positionnez vous dans le dossier OC_Projet12 (`cd OC_Projet12`)
+   </li> 
 
-(v) créez votre environnement virtuel, par exemple avec la commande:
+<li>  créez votre environnement virtuel, par exemple avec la commande:
 
 `python3 -m venv env`
+   </li> 
 
-(vi) à l'aide des commandes du terminal, activez votre environnement virtuel 
+<li>  à l'aide des commandes du terminal, activez votre environnement virtuel 
 (si votre environnement virtuel s'appelle env):
 > Sur Windows  
 - terminal de type bash : `source env/Scripts/activate`
@@ -102,11 +106,13 @@ Elle peut uniquement modifier et mettre à jour les évènements dont elle est r
   
 > Sur Mac ou Linux
 - `source env/bin/activate`
+   </li> 
 
-(vii) puis installez les packages requirements du projet à l'aide de la commande:
+<li>  puis installez les packages requirements du projet à l'aide de la commande:
 
 `pip install -r requirements.txt`
-
+   </li> 
+</ol>
 ## Comment utiliser l'Appli:
 
 ### Expérience Admin:
