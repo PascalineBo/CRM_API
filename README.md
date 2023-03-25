@@ -90,7 +90,9 @@ Requis: téléchargez **[Python 3.10](https://www.python.org/downloads/)**
 `git clone https://github.com/PascalineBo/CRM_API.git`
    </li> 
 
-<li>  puis positionnez vous dans le dossier CRM_API (`cd CRM_API`)
+<li>  puis positionnez vous dans le dossier CRM_API 
+
+`cd CRM_API`
    </li> 
 
 <li>  créez votre environnement virtuel, par exemple avec la commande:
