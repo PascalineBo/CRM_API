@@ -24,7 +24,7 @@ les différents endpoints. La liste des endpoints de cette API est:
     <pre>epic/customers/</pre> 
     
     <pre>epic/customers/{id}/</pre> 
-liste complète des clients; CRUD d'un client selon son id et les permissions
+    > liste complète des clients; CRUD d'un client selon son id et les permissions
 
     /epic/users/
     /epic/users/{id}
