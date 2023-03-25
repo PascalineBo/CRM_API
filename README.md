@@ -33,7 +33,7 @@ les différents endpoints. La liste des endpoints de cette API est:
      <pre>/epic/contracts/</pre> 
      <pre>/epic/contracts/{id}</pre>
 
-    > liste complète des évènements de la base de données; CRUD d'un évenement selon son id et les permissions
+    > liste complète des évènements de la base de données; CRUD d'un évenement selon son id et les permissions:
      <pre>/epic/events/</pre> 
      <pre>/epic/events/{id}</pre>
 
