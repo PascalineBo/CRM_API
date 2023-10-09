@@ -76,7 +76,7 @@ Les utilisateurs ont les permissions suivantes:
 - Le Management (CONTROLLING) a accès à tous les endpoints et peut faire toutes les opérations du CRUD
 - L'équipe Ventes (SALES) a accès à tous les objets de la Base de Données en Lecture, sauf les données des Utilisateurs; 
 Elle peut créer des Clients, les mettre à jour si ce sont les siens, créer des Contrats et les mettre à jour si ce sont les siens;
-- L'équipe Support (SUPPORT) a accès à tous les objets de la Base de Données en Lecture, saut les données des Utilisateurs;
+- L'équipe Support (SUPPORT) a accès à tous les objets de la Base de Données en Lecture, sauf les données des Utilisateurs;
 Elle peut uniquement modifier et mettre à jour les évènements dont elle est responsable.
 
 ## Comment installer cette Appli sur votre ordinateur:
